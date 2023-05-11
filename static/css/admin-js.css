@@ -11,7 +11,7 @@
 }
 
 .addImg__button {
-    background: url("/static/img/camera.svg") no-repeat center center;
+    background: url("/static/image/camera.svg") no-repeat center center;
     background-repeat: no-repeat;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .removeImg__button {
-    background: url("/static/img/trash-2.svg") no-repeat center center;
+    background: url("/static/image/trash-2.svg") no-repeat center center;
     background-repeat: no-repeat;
 }
 
