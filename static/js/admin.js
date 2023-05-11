@@ -9,33 +9,9 @@ let content = "";
 function publish(event) {
     event.preventDefault();
     let form = document.querySelector('.main__form');
-    // let titleInput = form.querySelector('input[name="title"]');
-    // let descriptionInput = form.querySelector('input[name="description"]');
-    // let authorInput = form.querySelector('input[name="author"]');
-    // let avatarImgInput = form.querySelector('input[name="avatarImg"]');
-    // let dateInput = form.querySelector('input[name="date"]');
-    // let imageInput = form.querySelector('input[name="image"]');
+
     let contentTextArea = form.querySelector('textarea[name="content"]')
 
-    // let title = "";
-    // let description = "";
-    // let author = "";
-    // let date = "";
-    // let avatar;
-    // let image;
-    // let content = "";
-    // if (titleInput !== null) {
-    //     title = titleInput.value;
-    // }
-    // if (descriptionInput !== null) {
-    //     description = descriptionInput.value;
-    // }
-    // if (authorInput !== null) {
-    //     author = authorInput.value;
-    // }
-    // if (dateInput !== null) {
-    //     date = dateInput.value;
-    // }
 
     if (contentTextArea !== null) {
         content = contentTextArea.value;
