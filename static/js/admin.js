@@ -6,6 +6,10 @@ let avatar = "";
 let hero = "";
 let content = "";
 
+//const publishButton = document.getElementById('publish-button');
+//publishButton.addEventListener('click', publish);
+
+
 function publish(event) {
     event.preventDefault();
     let form = document.querySelector('.main__form');

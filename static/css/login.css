@@ -1,16 +1,19 @@
-* {
+*
+{
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.body__section_backgroud {
+.body__section_backgroud
+{
     background-image: url('../image/ears.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.body__display {
+.body__display
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +22,8 @@
     gap: 368px;
 }
 
-.title {
+.title
+{
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
@@ -29,7 +33,8 @@
     width: 240px;
 }
 
-.title__author {
+.title__author
+{
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -38,7 +43,8 @@
     color: #FFFFFF;
 }
 
-.subtitle {
+.subtitle
+{
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -48,7 +54,8 @@
     padding-top: 16px;
 }
 
-.login {
+.login
+{
     display: flex;
     flex-direction: column;
     width: 480px;
@@ -59,7 +66,8 @@
     padding-left: 40px;
 }
 
-.login__title {
+.login__title
+{
     font-family: 'Lora';
     font-style: normal;
     font-weight: 400;
@@ -69,7 +77,8 @@
     padding-bottom: 50px;
 }
 
-.login__name {  
+.login__name
+{  
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -79,15 +88,18 @@
     padding-bottom: 5px;
 }
 
-.login__email_margin {
+.login__email_margin
+{
     margin-bottom: 40px;
 }
 
-.login__password_margin {
+.login__password_margin
+{
     margin-bottom: 85px;
 }
 
-.login__field {
+.login__field
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +108,8 @@
     height: 40px;    
 }
 
-.login__field_input {
+.login__field_input
+{
     width: 400px;
     height: 40px;
     font-family: 'Oxygen';
@@ -110,35 +123,46 @@
     padding: 0 4px 0 4px;
 }
 
-.login__field_input:hover {
+.login__field_input:hover
+{
     background: #F7F7F7;
     border-bottom: 2px solid #2E2E2E;
     border-radius: 5px 5px 0 0;
 }
 
-.login__field_input:not(:placeholder-shown) {
+.login__field_input:not(:placeholder-shown)
+{
     background: #F7F7F7;
     border-bottom: 2px solid #2E2E2E;
     border-radius: 5px 5px 0 0;
 }
 
-input:focus {
+input
+{
+    border: 0;
+}
+
+input:focus
+{
     outline: none;
     box-shadow: none;
 }
 
-.login__field_icon {
+.login__field_icon
+{
     position: absolute;
     z-index: 1;
     margin-left: 92%;
 }
 
-.button__size {
+.button__size
+{
     width: 93px;
     height: 48px;
 }
 
-.button-style {
+.button-style
+{
     font-family: 'Oxygen';
     font-style: normal;
     font-weight: 400;
@@ -149,7 +173,8 @@ input:focus {
     border-radius: 3px;
 }
 
-.button-style:hover {
+.button-style:hover
+{
     background: #DD783F;
     opacity: 0.8;
 }
