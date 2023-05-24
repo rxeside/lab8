@@ -12,7 +12,7 @@ const inputDiscp = document.querySelector('#inputDiscp');
 const inputName = document.querySelector('#inputName');
 const inputDate = document.querySelector('#inputDate');
 
-//const loadAvtr = document.querySelector('#loadAvtr');
+const loadAvtr = document.querySelector('#loadAvtr');
 const loadImg = document.querySelector('#loadImg');
 
 publishButton.addEventListener('click', publish);
@@ -21,7 +21,7 @@ inputDiscp.addEventListener('input', setDiscription);
 inputName.addEventListener('input', setAuthorName);
 inputDate.addEventListener('input', setDate);
 
-//loadAvtr.AddEventListener('input', loadAvatar(onchange)) ;
+loadAvtr.addEventListener('input', loadAvatar) ;
 loadImg.addEventListener('change', loadImage);
 
 function publish(event) {
