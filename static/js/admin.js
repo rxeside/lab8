@@ -6,9 +6,23 @@ let avatar = "";
 let hero = "";
 let content = "";
 
-//const publishButton = document.getElementById('publish-button');
-//publishButton.addEventListener('click', publish);
+const publishButton = document.querySelector('#publishButton');
+const inputTitle = document.querySelector('#inputTitle');
+const inputDiscp = document.querySelector('#inputDiscp');
+const inputName = document.querySelector('#inputName');
+const inputDate = document.querySelector('#inputDate');
 
+//const loadAvtr = document.querySelector('#loadAvtr');
+const loadImg = document.querySelector('#loadImg');
+
+publishButton.addEventListener('click', publish);
+inputTitle.addEventListener('input', setTitle);
+inputDiscp.addEventListener('input', setDiscription);
+inputName.addEventListener('input', setAuthorName);
+inputDate.addEventListener('input', setDate);
+
+//loadAvtr.AddEventListener('input', loadAvatar(onchange)) ;
+loadImg.addEventListener('change', loadImage);
 
 function publish(event) {
     event.preventDefault();
@@ -299,7 +313,7 @@ function removeAvatar(event) {
 }
 
 function setTitle() {
-    let element = document.getElementById("input-title");
+    let element = document.getElementById("inputTitle");
     let inputValue = element.value;
     let elementInsert = document.querySelector(".box-show__title");
     let elementInsert2 = document.querySelector(".box-show__card_title");
@@ -309,7 +323,7 @@ function setTitle() {
 }
 
 function setDiscription() {
-    let element = document.getElementById("input-discp");
+    let element = document.getElementById("inputDiscp");
     let inputValue = element.value;
     let elementInsert = document.querySelector(".box-show__subtitle");
     let elementInsert2 = document.querySelector(".box-show__card_subtitle");
@@ -319,7 +333,7 @@ function setDiscription() {
 }
 
 function setAuthorName() {
-    let element = document.getElementById("input-name");
+    let element = document.getElementById("inputName");
     let inputValue = element.value;
     let elementInsert = document.getElementById("avtar-name");
     elementInsert.innerText = inputValue;
@@ -327,7 +341,7 @@ function setAuthorName() {
 }
 
 function setDate() {
-    let element = document.getElementById("input-date");
+    let element = document.getElementById("inputDate");
     let inputValue = element.value;
     let elementInsert = document.getElementById("date");
     elementInsert.innerText = inputValue;

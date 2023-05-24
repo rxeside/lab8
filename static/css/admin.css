@@ -17,6 +17,11 @@ input:focus {
     box-shadow: none;
 }
 
+input
+{
+    border: 0;
+}
+
 textarea {
     resize: none;
     border: 0;

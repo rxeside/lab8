@@ -6,7 +6,7 @@
   <title>laba8</title>
   <link href="static/css/admin.css" rel="stylesheet" type="text/css">
   <link href="static/css/admin-js.css" rel="stylesheet" type="text/css">
-  <script src="static/js/admin.js"></script>
+  <script src="static/js/admin.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
@@ -27,7 +27,7 @@
           <h2 class="preview__title">New Post</h2>
           <p class="preview__name_font">Fill out the form bellow and publish your article</p>
         </div>
-        <input id="publish-button" class="button-style button__size" onclick={publish(event)} type="submit" value="Publsih">
+        <input id="publishButton" class="button-style button__size" type="submit" value="Publsih">
       </div>
       <div class="main-information">
         <p class="form__block_name">Main Information</p>
@@ -35,33 +35,33 @@
           <div>
             <label>
               <p class="name__font">Title</p>
-              <input id="input-title" name="title" class="input__text" onchange={setTitle()} placeholder="New Post" required>
+              <input id="inputTitle" name="title" class="input__text" placeholder="New Post" required>
             </label>
             <label>
               <p class="name__font">Short description</p>
-              <input id="input-discp" name="description" class="input__text" onchange={setDiscription()} placeholder="Please, enter any description" required>
+              <input id="inputDiscp" name="description" class="input__text" placeholder="Please, enter any description" required>
             </label>
             <label>
               <p class="name__font">Author name</p>
-              <input id="input-name" name="author" class="input__text" onchange={setAuthorName()} required>
+              <input id="inputName" name="author" class="input__text" required>
             </label>
             <div>
               <p class="name__font">Author Photo</p>
               <label class="form__author-photo">
                 <div class="form__author-photo_img">
-                  <input name="avatarImg" type="file" onchange={loadAvatar(event)} required>
+                  <input id="loadAvtr" name="avatarImg" type="file" onchange={loadAvatar(event)} required>
                 </div>
                 <p class="form__author-photo_upload">Upload</p>
               </label>
             </div>
             <label>
               <p class="name__font">Publish Date</p>
-              <input id="input-date" name="date" class="input__text" onchange={setDate()} type="date" value="2022-05-01" required>
+              <input id="inputDate" name="date" class="input__text" type="date" value="2023-05-01" required>
             </label>
             <div class="hero-img">
               <p class="name__font">Hero Image</p>
               <label class="form__hero-img form__hero-img-big_size">
-                <input type="file" name="image" onchange={loadImage(event)} required>
+                <input id="loadImg" type="file" name="image"  required>
                 <img class="form__hero-img_img" src="/static/image/camera.svg">
                 <p class="form__hero-img_upload">Upload</p>
               </label>
@@ -70,7 +70,7 @@
             <div class="hero-img">
               <p class="name__font">Hero Image</p>
               <label class="form__hero-img form__hero-img-little_size">
-                <input type="file" name="image" onchange={loadImage(event)} required>
+                <input id="loadImg" type="file" name="image" required>
                 <img class="form__hero-img_img" src="/static/image/camera.svg">
                 <p class="form__hero-img_upload">Upload</p>
               </label>
